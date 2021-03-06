@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
+:root {
+  --DarkBlue: hsl(217, 28%, 15%); /*(intro and email sign up background)*/
+  --DarkBlueM: hsl(218, 28%, 13%); /*(main background)*/
+  --DarkBlueF: hsl(216, 53%, 9%); /*(footer background)*/
+  --DarkBlueT: hsl(219, 30%, 18%); /*(testimonials background)*/
+  --Cyan: hsl(176, 68%, 64%); /*(inside call-to-action gradient)*/
+  --Blue: hsl(198, 60%, 50%); /*(inside call-to-action gradient)*/
+  --LightRed: hsl(0, 100%, 63%); /*(error)*/
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  background: var(--DarkBlueM);
+  color: #fff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 400;
+  transition: 0.3s;
+}
+ul {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.intro {
+  background-color: var(--DarkBlue);
+  width: 100%;
+  background-image: url("images/bg-curvy-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+/* header */
+header {
+  width: 100%;
+  height: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+nav {
+  width: 300px;
+  font-family: "Relway", sans-serif;
+}
+li:hover {
+  font-weight: 700;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+/* hero section */
+.hero-div {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+}
+.hero-div img {
+  width: 100%;
+}
+h1 {
+  font-size: 2.2rem;
+  font-family: "Relway", sans-serif;
+}
+h2 {
+  font-family: "Relway", sans-serif;
+}
+.hero-div p {
+  font-size: 1.2rem;
+  padding: 2rem 5rem;
+}
+/* button */
+.btn {
+  background-image: linear-gradient(to right, var(--Cyan), var(--Blue));
+  border-radius: 25px;
+  color: #fff;
+  font-family: "Relway", sans-serif;
+  padding: 0.8rem 5rem;
+  margin-top: 2rem;
+}
+.btn:hover {
+  background-image: linear-gradient(to right, var(--Blue), var(--Cyan));
+}
+
+/* Features section */
+#features {
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem auto;
+  width: 70%;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.col {
+  width: 380px;
+  margin: 3rem 1rem;
+}
+.col img {
+  margin-bottom: 1.5rem;
+}
+
+/* Team section */
+#team {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--DarkBlueM);
+}
+.left-div img {
+  width: 100%;
+}
+.right-div {
+  margin-left: 2rem;
+  width: 450px;
+}
+.right-div h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+.right-div a {
+  color: var(--Cyan);
+  border-bottom: 1px solid var(--Cyan);
+}
+.right-div a:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+.right-div img {
+  margin-bottom: -3px;
+  margin-left: 5px;
+}
+
+/* testimonials */
+#testimonials {
+  width: 90%;
+  background-image: url("images/bg-quotes.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+
+  display: flex;
+  justify-content: space-between;
+  margin: 7rem auto;
+  align-items: center;
+  padding-top: 2rem;
+  flex-wrap: wrap;
+}
+.testimonial {
+  width: 350px;
+  background: var(--DarkBlueT);
+  padding: 2rem;
+  box-shadow: 1px 5px 15px -10px #555;
+}
+.testimonial img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.profile {
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+}
+/* sign up */
+#sign-in {
+  margin: auto;
+  width: 70%;
+  text-align: center;
+  padding: 3rem 5rem;
+  background: var(--DarkBlue);
+  position: relative;
+  bottom: -110px;
+  z-index: 2;
+  box-shadow: 1px 5px 15px -10px #555;
+  border-radius: 10px;
+}
+#sign-in h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+#sign-in p {
+  margin-bottom: 2.5rem;
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container1 {
+  width: 70%;
+  position: relative;
+}
+#email {
+  width: 100%;
+  height: 2.7rem;
+  border-radius: 25px;
+  padding: 0.5rem 2rem;
+}
+#text {
+  display: block;
+  font-weight: 700;
+  padding: 5px;
+  position: absolute;
+  left: 1.6rem;
+  font-size: 12px;
+}
+.newsletter-btn {
+  padding: 0.8rem 2rem;
+  margin: auto;
+}
+/* footer */
+footer {
+  background: var(--DarkBlueF);
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+footer ul {
+  flex-direction: column;
+}
+footer ul li {
+  margin-bottom: 10px;
+}
+footer div {
+  width: auto;
+}
+.footer-text {
+  width: 300px;
+}
+footer span {
+  margin-left: 1rem;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  width: 90%;
+  flex-wrap: wrap;
+}
+.phone,
+.email-flyo {
+  width: 170px;
+  margin-bottom: 1rem;
+}
+.logo {
+  width: 90%;
+}
+.social-links {
+  width: auto;
+}
+.social-links i {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  background: var(--DarkBluef);
+  border-radius: 50%;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.social-links i:hover {
+  color: var(--Cyan);
+  border: 1px solid var(--Cyan);
+}
+.attribution {
+  position: absolute;
+  bottom: 5px;
+}
+.attribution a {
+  color: #fff;
+}
+
+/* media query */
+@media (max-width: 1200px) {
+  #team {
+    justify-content: flex-start;
+  }
+  #team h2 {
+    font-size: 1.5rem;
+  }
+  .right-div {
+    margin-top: 3rem;
+  }
+  #testimonials {
+    justify-content: space-around;
+  }
+  .testimonial {
+    margin: 1rem auto;
+  }
+
+  #sign-in {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    padding: 3rem 5rem;
+    background: var(--DarkBlue);
+    position: relative;
+  }
+  .newsletter-btn {
+    padding: 0.8rem 1rem;
+    margin-left: 1rem;
+  }
+  .hero-div {
+    width: 80%;
+    line-height: 1.3;
+  }
+  .hero-div h1 {
+    margin-top: 3rem;
+  }
+  .hero-div p {
+    font-size: 1rem;
+    padding: 2rem 0rem;
+  }
+  #features {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  #features {
+    justify-content: center;
+  }
+}
+@media (max-width: 425px) {
+  .head > img {
+    width: 100px;
+  }
+  nav {
+    width: 200px;
+    font-size: 12px;
+  }
+  #sign-in {
+    width: 90%;
+    padding: 2rem;
+    bottom: -70px;
+  }
+  #sign-in h2 {
+    font-size: 1.5rem;
+  }
+  form {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .container1 {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .container2 {
+    width: 100%;
+  }
+  .newsletter-btn {
+    width: 100%;
+    margin: 0;
+  }
+  footer {
+    height: 800px;
+  }
+  .footer-content div {
+    margin-top: 1rem;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .social-links {
+    margin: auto;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .intro {
+    background-image: url("images/bg-curvy-mobile.svg");
+    background-position: bottom;
+  }
+}
