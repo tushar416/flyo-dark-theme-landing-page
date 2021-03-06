@@ -27,6 +27,7 @@ a {
   text-decoration: none;
   font-weight: 400;
   transition: 0.3s;
+  color: #fff;
 }
 ul {
   text-decoration: none;
@@ -60,7 +61,7 @@ nav {
   width: 300px;
   font-family: "Relway", sans-serif;
 }
-li:hover {
+a:hover {
   font-weight: 700;
   transition: 0.4s;
   cursor: pointer;
